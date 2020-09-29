@@ -1,7 +1,12 @@
 import React from 'react'
 
 export default function UserCard (props) {
-        return (
+    // if (!props) {
+    //     console.log('Loading...')
+    //     return <h1>Loading...</h1>
+    // }    
+    
+    return (
             <div>
                 <img src={props.myCard.avatar_url} alt='blah'/>
                 <h1>{props.myCard.name}</h1>
